@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Open Sans";
+}
+#hamburger-menu {
+  position: absolute;
+  height: 100%;
+  width: 200px; 
+  padding: 2rem 0;
+  background-color: #0D0D0D;
+}
+
+.toggleMenuBar {
+  position: absolute;
+  left: 200px;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+}
+
+
+.toggleMenuBar span {
+  width: 3rem;
+  height: 0.45rem;
+  background-color: black;
+  display: block;
+  margin: 0.35rem 0;
+  transition: 0.7s;
+}
+
+.change .bar1 {
+  transform: rotate(0);
+}
+.change .bar2 {
+  opacity: 1;
+}
+
+.change .bar3 {
+  transform: rotate(0);
+}
+
+.change {
+  left: -200px;
+}
+
+.bar1 {
+  transform: rotate(-45deg) translate(-0.95rem, 0.45rem); /*translate(-7px, 5px)*/
+}
+
+.bar2 {
+  opacity: 0;
+}
+
+.bar3 {
+  transform: rotate(45deg) translate(-0.6rem, -0.4rem); /*translate(-8px, -6px)*/
+}
+
+.hamburger-navlist li {
+  list-style: none;
+  padding: 1rem 1.8rem;
+  color: #F1F1F1;
+  opacity: 0.7;
+}

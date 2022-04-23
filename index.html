@@ -5,24 +5,33 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Antic&family=Catamaran:wght@100;400;500;700;900&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap&family=Opens+Sans"
 			rel="stylesheet">
-    <link rel="stylesheet" href="./header.css" type="text/css">
   </head>
   <body>
-    <div id="hamburger-menu">
-      <div onclick="toggleBar()" class="toggleMenuBar">
-        <span class="bar1"></span>
-        <span class="bar2"></span>
-        <span class="bar3"></span>
+    <!-- header section -->
+    <header>
+      
+
+      <!-- Navigation -->
+      <div id="hamburger-menu">
+        <div onclick="toggleBar()" class="toggleMenuBar">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+        <div class="menu-links">
+          <ul class="hamburger-navlist">
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>New &amp; Popular</li>
+          </ul>
+        </div>
       </div>
-      <div class="menu-links">
-        <ul class="hamburger-navlist">
-          <li>TV Shows</li>
-		      <li>Movies</li>
-        	<li>New &amp; Popular</li>
-        </ul>
+
+    	<div class="logo">XZN</div>
+      <div class="search">
+        <input type="text" name="search" id="search-site" placeholder="Enter search term">
       </div>
-    </div>
-    <script src="./hamburger-menu.js" defer></script>	  
-	  
+    </header>
+    
   </body>
 </html>

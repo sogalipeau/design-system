@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-		<link
-			href="https://fonts.googleapis.com/css2?family=Antic&family=Catamaran:wght@100;400;500;700;900&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap&family=Opens+Sans"
-			rel="stylesheet">
-  </head>
-  <body>
-    <!-- header section -->
-    <header>
-      
 
-      <!-- Navigation -->
-      <div id="hamburger-menu">
-        <div onclick="toggleBar()" class="toggleMenuBar">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </div>
-        <div class="menu-links">
-          <ul class="hamburger-navlist">
-            <li>TV Shows</li>
-            <li>Movies</li>
-            <li>New &amp; Popular</li>
-          </ul>
-        </div>
-      </div>
+<head>
+	<meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/b16cf37f20.js" crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Antic&family=Catamaran:wght@100;400;500;700;900&family=Overpass:wght@800;900&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap&family=Opens+Sans"
+		rel="stylesheet">
+  <link rel="stylesheet"
+	href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+</head>
 
-    	<div class="logo">XZN</div>
-      <div class="search">
-        <input type="text" name="search" id="search-site" placeholder="Enter search term">
+<body>
+	<!-- header section -->
+	<header>
+
+		<!-- Navigation -->
+		<div id="hamburger-menu">
+			<div onclick="toggleBar()" class="toggleMenuBar">
+				<span class="bar1"></span>
+				<span class="bar2"></span>
+				<span class="bar3"></span>
+			</div>
+			<div class="menu-links">
+				<ul class="hamburger-navlist">
+					<li>TV Shows</li>
+					<li>Movies</li>
+					<li>New &amp; Popular</li>
+				</ul>
+			</div>
+		</div>
+   
+    <!-- Site logo -->
+		<div class="logo">XZN</div>
+
+    <!-- Site Search -->
+		<div class="search">
+			<input type="text" name="search" id="search-site" placeholder="Enter search term">
+	    <a href="#"><span class="material-symbols-outlined">search</span></a>
+    </div>
+	</header>
+
+  <!-- Banner -->
+  <div class="hero-section">
+    <div class="banner">
+      <div class="heading">
+        <h2>XZN Style Guide</h2>
+        <p>No better way to take the hassle out of 
+          our content, website, presentation and 
+          entire business designs
+        </p>
       </div>
-    </header>
-    
-  </body>
+    </div>
+  </div>
+
+</body>
+
 </html>

@@ -1,60 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="suthor" content="O.A Sanusi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.typekit.net/gvl8pcs.css">
   <script src="https://kit.fontawesome.com/b16cf37f20.js" crossorigin="anonymous"></script>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Antic&family=Catamaran:wght@100;400;500;700;900&family=Overpass:wght@800;900&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap&family=Opens+Sans"
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Julius+Sans+One&family=Libre+Baskerville:wght@400;700&family=Raleway:wght@100;200;400;500;800;900&display=swap"
 		rel="stylesheet">
-  <link rel="stylesheet"
-	href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
+	<link rel="stylesheet"
+		href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>My Design Guide</title>
 </head>
 
 <body>
-	<!-- header section -->
-	<header>
-
-		<!-- Navigation -->
-		<div id="hamburger-menu">
-			<div onclick="toggleBar()" class="toggleMenuBar">
-				<span class="bar1"></span>
-				<span class="bar2"></span>
-				<span class="bar3"></span>
+	<!-- Header Area  -->
+	<header class="header">
+		<!-- Logo to the left -->
+		<div class="logo">OASis</div>
+		<!-- Hamburger menu to the right -->
+		<div class="menu">
+			<div class="togglebar">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-			<div class="menu-links">
-				<ul class="hamburger-navlist">
-					<li>TV Shows</li>
-					<li>Movies</li>
-					<li>New &amp; Popular</li>
-				</ul>
-			</div>
+			<!-- Hidden menu content -->
+			<ul class="menu-content">
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Entertainment</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Business</a></li>
+			</ul>
 		</div>
-   
-    <!-- Site logo -->
-		<div class="logo">XZN</div>
-
-    <!-- Site Search -->
-		<div class="search">
-			<input type="text" name="search" id="search-site" placeholder="Enter search term">
-	    <a href="#"><span class="material-symbols-outlined">search</span></a>
-    </div>
+		<!-- menu end -->
 	</header>
 
-  <!-- Banner -->
-  <div class="hero-section">
-    <div class="banner">
-      <div class="heading">
-        <h2>XZN Style Guide</h2>
-        <p>No better way to take the hassle out of 
-          our content, website, presentation and 
-          entire business designs
-        </p>
+	<!-- Banner Section -->
+	<main class="main-page">
+		<!-- Jumbotron -->
+		<div class="banner"></div>
+
+		<!-- System heading and description section-->
+		<section class="heading-section content-section">
+			<header>
+				<h1 class="primary-heading">The <span class="logo-intext">OASis</span> Design Guide</h1>
+				<p>Whether colors, typography or text styles, the design
+					system not only renders meaning, harmony and readability to your UI, but it is also designed to enhance the user experience
+					in a way that reflects our brand.
+				</p>
+			</header>
+		</section>
+
+		<!-- System color section -->
+		<section class="color-section content-section">
+			<div class="c-row-1 color-content-wrapper">
+				<!-- Color Section Heading: LEFT -->
+				<div class="c-col color-heading-container">
+					<header>
+						<h2 class="secondary-heading">Color Guide</h2>
+						<p>We stand out with colors that represents our style, contrast well with UI elements, and meet legibility standards.
+						</p>
+					</header>
+				</div>
+
+				<!-- Color Section Color Palette: RIGHT -->
+				<div class="c-col color-palette-container">
+					<div class="palette">
+						<!-- First color -->
+						<div class="color-palette"></div>
+						<!-- Second color -->
+						<div class="color-palette"></div>
+						<!-- Third color -->
+						<div class="color-palette"></div>
+						<!-- Fourth color -->
+						<div class="color-palette"></div>
+						<!-- Fifth color -->
+						<div class="color-palette"></div>
+					</div>
+				</div>
+			</div>
+			<div class="c-row-2">
+				<!-- Diplayed color description heading and toggle -->
+				<div id="toggleColor">
+					<h3 class="tertiary-heading">Palette codes</h3>
+					<div>
+						<span id="plus" class="material-symbols-outlined">add</span>
+						<span id="minus" class="material-symbols-outlined">remove</span>
+					</div>
+				</div>
+				<!-- Hidden color description codes -->
+				<div class="color-description-container">
+					<div class="box">
+						<div class="color">
+							<ul class="c-list">
+								<li>Mother Earth</li>
+								<li>#127361</li>
+								<li>rgb(18, 115, 97)</li>
+							</ul>
+						</div>
+						<div class="color">
+							<ul class="c-list">
+								<li>Summer Rays</li>
+								<li>#F2B035</li>
+								<li>rgb(242, 176, 53)</li>
+							</ul>
+						</div>
+						<div class="color">
+							<ul class="c-list">
+								<li>Cara Cara</li>
+								<li>#F2921D</li>
+								<li>rgb(242, 146, 29)</li>
+							</ul>
+						</div>
+						<div class="color">
+							<ul class="c-list">
+								<li>Whimsical</li>
+								<li>#F2E2CE</li>
+								<li>rgb(242, 226, 206)</li>
+							</ul>
+						</div>
+						<div class="color dark">
+							<ul class="c-list">
+								<li>Dark Rider</li>
+								<li>#404040</li>
+								<li>rgb(64, 64, 64)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section font family -->
+		<section class="font-section content-section">
+			<div class="font-flex-container">
+				<div class="col-1">
+					<h2 class="secondary-heading">Typography &amp;<br> Text styles</h2>
+				</div>
+				<div class="col-2">
+					<!-- Text Styles -->
+					<div class="col-2-left">
+						<div class="main-heading">
+							<p><span>MAIN HEADING</span><br> 50px<br>UPPERCASE</p>
+						</div>
+						<div class="sub-heading">
+							<p><span>SUBHEADING</span><br> 30px<br>UPPERCASE</p>
+						</div>
+						<div class="paragraph-text">
+							<p><span>Body</span><br> 18px</p>
+						</div>
+					</div>
+					<!-- Font-family -->
+					<div class="col-2-right">
+						<div class="heading-font">
+							<h2 class="">Julius Sans One</h2>
+						</div>
+						<div class="subheading-font">
+							<h3 class="">Julius Sans One</h3>
+						</div>
+						<div class="paragraph-font">
+							<p>Muli, lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+								Ipsum
+								has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen
+								book.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="far fa-envelope"></i></a>
+      </div>
+      <div class="project-name">
+        <p><span id="currentYear"></span>: A sogalipeau.github.io Project</p>
       </div>
     </div>
-  </div>
-
+  </footer>
 </body>
 
 </html>
